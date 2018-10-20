@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="8dp"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_contact_firstCharacter"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:gravity="center"
+            tools:text="B"
+            android:background="@drawable/shape_circle"
+            android:textColor="@android:color/white"
+            android:textSize="32sp"
+            android:fontFamily="sans-serif-light"
+            />
+        <LinearLayout
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/tv_contact_firstCharacter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_contact_contactName"
+                android:layout_width="match_parent"
+                android:gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                tools:text="eli"
+                />
+            <TextView
+                android:id="@+id/tv_contact_phoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                tools:text="09120000000"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</FrameLayout>
